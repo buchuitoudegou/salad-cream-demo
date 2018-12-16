@@ -1,0 +1,79 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs2"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        app:pstsShouldExpand="true"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager2"
+        android:layout_below="@id/tabs2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/foodicon1"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/store1"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/community1"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/me1"/>
+    </LinearLayout>
+    <android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="15dp"
+        android:text="食材"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:text="商城"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:text="社区"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="15dp"
+        android:text="我的"/>
+</android.support.v7.widget.LinearLayoutCompat>
+</RelativeLayout>
